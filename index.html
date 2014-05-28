@@ -4,22 +4,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/css/site.css">
-	<script src="/js/site.js"></script>
-	<title>My Blog</title>
+	<link rel="stylesheet" href="css/site.css">
+	<title>Cakeopolis</title>
 </head>
 <body>
 	<header>
 		{% include header.html %}
 	</header>
-	<div class="container">
-		{% for post in site.posts %}
-			<article>
-				<h1><a href="{{ site.base_url }}{{ post.url }}">{{ post.title }}</a></h1>
-				<p>{{ post.date | date_to_string }}</p>
-				<p>{{ post.content }}</p>
-			</article>
-		{% endfor %}
+	<div class="content">
+		<div class="logo">
+			<img src="imgs/page-logo.png"/>
+			<img src="imgs/contact-details.png"/>
+			<div class="social-links">
+				<a href="https://www.facebook.com/Cakeopolislondon">
+					<img src="imgs/logo-facebook.png"/>
+				</a>
+				<a href="https://twitter.com/cakeopolis">
+					<img src="imgs/logo-twitter.png"/>
+				</a>
+				<a href="http://instagram.com/cakeopolislondon">
+					<img src="imgs/logo-instagram.png"/>
+				</a>
+			</div>
+		</div>
 	</div>
 	<footer>
 		{% include footer.html %}

@@ -1,4 +1,30 @@
 body {
 	font-family: Helvetica;
 	font-size: 75%;
+	background: url("../imgs/page-background.png");
+	text-align:center;
 }
+
+a {text-decoration:none;}
+
+.logo {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.logo img {
+	max-width:50%;
+	min-width:400px;
+}
+
+.social-links {	
+}
+
+.social-links img {
+	max-width:10%;
+	min-width:50px;
+}
+
